@@ -16,13 +16,16 @@ public class ProgressBar : MonoBehaviour {
 	private float sizeOfSegment;
 
 	public void Awake() {
+		// get rect transform
 		rectTransform = GetComponent<RectTransform> ();
+		
+		// get image
 		image = GetComponentInChildren<Image>();
 		image.color = mainColor;
 		image.gameObject.SetActive(false);
 
-		sizeOfSegment = rectTransform.sizeDelta.x / numberOfSegments;
-
+		// count size of segments
+		sizeOfSegment = rectTransform.sizeDelta.x / numberOfSegments;		
 		for (int i = 0; i < numberOfSegments; i++) {
 			GameObject currentSegment = Instantiate(image.gameObject, transform.position, Quaternion.identity, transform);
 			currentSegment.SetActive(true);

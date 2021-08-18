@@ -17,6 +17,7 @@ public class CircularProgressBar : MonoBehaviour {
 	private float sizeOfSegment;
 
 	public void Awake() {
+		// get images
 		image = GetComponentInChildren<Image>();
 		image.color = mainColor;
 		image.gameObject.SetActive(false);
@@ -25,8 +26,9 @@ public class CircularProgressBar : MonoBehaviour {
 		float endNormalAngle = NormalizeAngle(360 - endAngle);
 		float notchesNormalAngle = (numberOfSegments - 1) * NormalizeAngle(sizeOfNotch);
 		float allSegmentsAngleArea = 1 - startNormalAngle - endNormalAngle - notchesNormalAngle;
+		
+		// count size of segments
 		sizeOfSegment = allSegmentsAngleArea / numberOfSegments;
-
 		for (int i = 0; i < numberOfSegments; i++) {
 			GameObject currentSegment = Instantiate(image.gameObject, transform.position, Quaternion.identity, transform);
 			currentSegment.SetActive(true);
