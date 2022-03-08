@@ -1,6 +1,6 @@
 # 2D Progress Bar Toolkit
 
-![d50a6f29-c4f1-482a-b282-4947f7e4bce3](https://user-images.githubusercontent.com/10097678/133939123-a0b565b4-6c43-4375-a0f2-4df199b2204f.jpg)
+![133939123-a0b565b4-6c43-4375-a0f2-4df199b2204f](https://user-images.githubusercontent.com/10097678/157189930-fee96ac3-f9e9-48e2-ad84-003024035cd4.jpg)
 
 Each game requires displaying user achievements and activity. One of the ways of presenting data for the player is the progress bar. To speed up the process of creating your dream game, our team has prepared a free library to handle various progress bar behaviors. It's powerful and simple because you don't need any scripting knowledge to create many kinds of beautiful and functional bars in your games!
 
@@ -14,7 +14,7 @@ Thanks to the ready solution, you have the opportunity to:
 
 The package includes `Circular Progress Bar` and `Classic Progress Bar`. Each of them has its own parameterization options.
 
-<img width="552" alt="Zrzut ekranu 2021-09-19 o 21 37 21" src="https://user-images.githubusercontent.com/10097678/133940697-f35861d2-f99f-4775-9962-535fe1870a2e.png">
+<img width="552" alt="133940697-f35861d2-f99f-4775-9962-535fe1870a2e" src="https://user-images.githubusercontent.com/10097678/157189936-d4a559c6-a0c9-4df5-b95f-270312b6430f.png">
 
 #### Circular Progress Bar
 - `mainColor` - base color of the bar
